@@ -1,8 +1,13 @@
 package com.OpenMRS.base;
 
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Baseclass {
+	
+	public WebDriver driver;
+
 	
         // sendkeys
 		public static void  sendKeys(WebElement element, String input) {
@@ -15,5 +20,14 @@ public class Baseclass {
 				}
 			
 		}
+ 
+public class getattribute {
+	
+	
+	public String getAttribute(WebElement element) {
+		return element.getAttribute("class");
+	}
 
+
+}
 }
