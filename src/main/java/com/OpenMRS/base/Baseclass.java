@@ -7,9 +7,7 @@ import org.openqa.selenium.WebElement;
 public class Baseclass {
 	
 	public WebDriver driver;
-
 	
-        // sendkeys
 		public static void  sendKeys(WebElement element, String input) {
 			try {
 				element.sendKeys(input);
