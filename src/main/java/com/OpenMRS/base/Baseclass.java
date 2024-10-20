@@ -8,6 +8,7 @@ public class Baseclass {
 	
 	public WebDriver driver;
 	
+
 		public static void  sendKeys(WebElement element, String input) {
 			try {
 				element.sendKeys(input);
@@ -21,6 +22,12 @@ public class Baseclass {
  
 public class getattribute {
 	
+	
+	protected void launchBrowser(String string) {
+	System.out.println("hai");
+		
+	}
+
 	
 	public String getAttribute(WebElement element) {
 		return element.getAttribute("class");
